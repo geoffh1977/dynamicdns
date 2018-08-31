@@ -17,7 +17,7 @@ LABEL maintainer="geoffh1977 <geoffh1977@gmail.com>"
 COPY --from=builder /usr/bin/noip2 /usr/bin/
 COPY scripts/* /usr/local/bin/
 
-RUN apk add -U --no-cache expect bash && \
+RUN apk add -U --no-cache expect bash curl jq && \
   mkdir /config && \
   addgroup -S dyndns && \
   adduser -S -H -G dyndns dyndns && \
