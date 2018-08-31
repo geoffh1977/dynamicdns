@@ -1,6 +1,6 @@
 # NoIP Dynamic DNS Container #
 
-![NoIP Logo](https://raw.githubusercontent.com/geoffh1977/dynamicdns/master/images/noip-logo.png)
+![NoIP Logo](https://raw.githubusercontent.com/geoffh1977/dynamicdns/master/images/noip-logo.jpg)
 
 ## Description ##
 This docker image provides the NoIP Dynamic DNS client. It allows for the dynamic configuration of noip2 config variables.
