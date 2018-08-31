@@ -5,7 +5,7 @@
 ## Description ##
 This docker image provides the NoIP Dynamic DNS client. It allows for the dynamic configuration of noip2 config variables.
 
-## Starting Consul Server ##
+## Starting NoIP Container ##
 The default setup will create a single noip client running through the use of provided environment variables. You can start this with the following command:
 
 `docker run -it --rm --name dynamicdns -v <CONFIGDIR>:/config -e USERNAME=<username> -e PASSWORD=<pasword> -e DOMAINS=<domains> geoffh1977/consul`
