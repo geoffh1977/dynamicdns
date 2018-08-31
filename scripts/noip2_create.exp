@@ -14,7 +14,7 @@ set interval [lindex $argv 3]
 
 set config_file "/config/noip2.conf"
 
-spawn /usr/bin/noip2 -C -c $config_file
+spawn /usr/bin/noip2 -I eth0 -C -c $config_file
 
 expect "Please enter the login/email string for no-ip.com"
 send "$email\r"

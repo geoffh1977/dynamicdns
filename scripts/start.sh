@@ -41,4 +41,3 @@ do
   echo
   ! sleep 60 && exit 1
 done
-
