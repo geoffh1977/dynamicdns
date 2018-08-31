@@ -19,8 +19,8 @@ COPY scripts/* /usr/local/bin/
 
 RUN apk add -U --no-cache expect bash curl jq && \
   mkdir /config && \
-  addgroup -S dyndns && \
-  adduser -S -H -G dyndns dyndns && \
+  addgroup dyndns && \
+  adduser -H -G dyndns dyndns && \
   chown dyndns:dyndns -R /config && \
   chmod +x /usr/local/bin/start.sh /usr/local/bin/healthcheck.sh&& \
   rm -rf /var/cache/apk/*
